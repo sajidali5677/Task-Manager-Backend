@@ -1,0 +1,38 @@
+
+<%- include("partials/header.ejs")%>
+<%- include("partials/nav.ejs")%>
+
+
+
+
+    
+<div class="Task-create">
+
+
+
+    <div class="tcard">
+
+     
+      <h1><%= title %></h1>
+      
+
+ <form action="/Task-create" method="post">
+  <input type="text" placeholder="Enter Task title "   name="head"> <br> <br> 
+  <input type="text" placeholder="Enter description "  name="details"><br> <br> 
+  <input type="text" placeholder="Enter Due Date"    name="duedate"><br> <br> 
+  <button>Create</button>
+
+ </form>
+
+
+    </div>
+
+
+
+
+     
+
+
+    
+    <%- include("partials/footer.ejs")%>
+  

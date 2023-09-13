@@ -1,0 +1,54 @@
+
+
+  <div class="main-body" >
+    <%- include("partials/header.ejs")%>
+    <%- include("partials/nav.ejs")%>
+
+
+
+
+    <div class="signin">
+
+
+
+      <div class="sin-card">
+
+        <h1><%= title %></h1>
+        
+
+          
+       
+
+   <form action="/signin" method="post">
+    <input name="username" type="text" placeholder="username"  > <br> <br> 
+    <input name="password" type="password" placeholder="password" ><br> <br> 
+    <button>signin</button> <br> <br>
+    <p>   Don't have an account? <a class="btn" href="/forget-pass">forget-pass</a></p>
+
+
+   </form>
+
+
+
+
+      </div>
+
+
+
+   </div>
+
+
+
+
+    
+      
+
+
+
+
+
+
+
+    
+        <%- include("partials/footer.ejs")%>
+  </div>

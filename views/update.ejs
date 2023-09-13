@@ -1,0 +1,25 @@
+
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+
+
+<div class="update">
+
+
+
+    <div class="up-card">
+
+<form action="/update/<%= task._id%>" method="post" class=" p-5 text-center mt-5 fs-1">
+    <h1>update page</h1>
+    <input name="head" type="text" value="<%= task.head %>"  > <br><br>
+    <input name="details" type="text" value="<%= task.details %>"    > <br><br>
+    <input name="duedate"  type="text"  value="<%= task.duedate %>"   > <br><br>
+    <button >update</button>
+    <p>   Already have an account? <a href="/Signin">Signin</a></p>
+
+
+</form>
+</div>
+
+<%- include("partials/footer")%>
+</div>

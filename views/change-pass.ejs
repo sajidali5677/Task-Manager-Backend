@@ -1,0 +1,23 @@
+
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+
+<div class="change">
+
+    <div class="change-card">
+
+<form  action="/change-pass/<%= id%>"  method="post"  >
+    <h1>change-Password</h1>
+    
+    <input name="password" type="password" placeholder="new password"  > <br><br>
+ 
+    <button class="btn btn-primary">Change Password</button>
+    
+
+
+
+</form>
+</div>
+</div>
+
+<%- include("partials/footer")%>

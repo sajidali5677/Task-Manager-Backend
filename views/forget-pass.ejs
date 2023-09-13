@@ -1,0 +1,24 @@
+
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+
+<div class="forget">
+
+    <div class="for-card">
+
+<form  action="/forget-pass" method="post" >
+    <h1>Enter Existing Email</h1>
+    
+    <input name="email" type="email" placeholder="Enter email" > <br><br>
+ 
+    <button class="btn btn-primary">Send Mail</button> <br> <br>
+    <p><a class="btn" href="/signin">signin</a> | <a  class="btn" href="/signup">signup</a></p>
+    
+
+
+
+</form>
+</div>
+</div>
+
+<%- include("partials/footer")%>

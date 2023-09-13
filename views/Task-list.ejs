@@ -1,0 +1,74 @@
+
+<%- include("partials/header.ejs")%>
+<%- include("partials/nav.ejs")%>
+
+
+
+
+    
+<div class="Task-list">
+
+
+
+    <div class="tdcard">
+
+     
+
+    
+    <h1>Task-list </h1> 
+   
+    
+     
+  
+
+   
+    
+     
+   <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+     <th scope="col">  No.</th>
+     <th scope="col"> Task-Title</th>
+     <th scope="col"> Task-Details </th>
+     <th scope="col"> Due-Date</th>
+     <th scope="col">  Edit</th>
+     <th scope="col">  Delete</th>
+     
+
+
+      </tr>
+
+    </thead>
+    <tbody>
+      <%  var i=1 %>
+      <% dets.forEach(task=>{ %>
+      <tr>
+        <td><%= i++ %></td>
+        <td><%= task.head%></td>
+        <td> <%= task.details%></td>
+        <td><%= task.duedate%></td>
+        <td> <a href="/update/<%=task._id%>">✏️</a> </td>
+        <td><a href="/delete/<%=task._id%>">❌</a> </td>
+      </tr>
+      <%})%>
+     
+    </tbody>
+  </table>
+  
+  
+  
+</div>
+<button><a href="/Task-create">Task-create</a></button>
+
+
+ </div>
+
+
+
+
+     
+
+
+    
+    <%- include("partials/footer.ejs")%>
+  

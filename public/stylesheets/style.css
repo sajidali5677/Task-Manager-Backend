@@ -1,0 +1,454 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+nav{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:  0 5vmax;
+  
+ 
+}
+nav h1{
+  font-size: 3vmax;
+  color: darkred;
+}
+nav ul{
+  display: flex;
+  gap: 5vmax;
+}
+nav ul li{
+  list-style-type: none;
+  font-size: 1.5vmax;
+  text-transform: capitalize;
+
+}
+nav ul li a {
+  text-decoration: none;
+  color:darkred;
+  font-weight: 700;
+  
+}
+.home{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ justify-content: center;
+ font-size: 3vmax;
+ text-transform: capitalize;
+ font-family: Arial, Helvetica, sans-serif;
+ color:#DC6D64;
+ background-color: #C4C3C1;
+}
+.home h1{
+  font-size: 6vmax;
+}
+.home button{
+  background-color:#DC6D64;
+  padding: 1vmax 2vmax;
+  font-size: 1.1vmax;
+  border: none;
+
+}
+.home button a{
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+
+.Task-create{
+ width: 100%;
+ height: 90%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: #C4C3C1;
+ 
+}
+.tcard{
+  width: 30%;
+  height: 60%;
+  border:.2vmax solid #DC6D64;
+  text-align: center;
+  line-height: 1.5vmax;
+
+}
+.tcard h1{
+  background-color: #DC6D64;
+  color: white;
+  text-align: center;
+  font-size: 2vmax;
+
+}
+.tcard form input{
+  width: 60%;
+  height: 20%;
+  font-size: 1.2vmax;
+  margin-top: 1vmax;
+  
+
+}
+.tcard form button{
+  background-color:#DC6D64;
+  color: #fff;
+  padding: 1vmax 2vmax;
+  font-size: 1.1vmax;
+  border: none;
+  text-transform: capitalize;
+  
+
+}
+
+
+
+
+
+
+
+
+.Task-list{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #C4C3C1;
+  
+ }
+ .Task-list button {
+  background-color:#DC6D64;
+ 
+  font-size: 1.1vmax;
+   border: none;
+ 
+  padding: 1vmax;
+  margin-top: 1vmax;
+
+ }
+ .Task-list button a{
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #fff;
+
+ }
+
+ .tdcard{
+  width: 60%;
+  height: 60%;
+   border:.2vmax solid #DC6D64;
+   text-align: center;
+   line-height: 2vmax;
+   
+ 
+ }
+ .tdcard h1{
+   background-color: #DC6D64;
+   color: white;
+   text-align: center;
+   font-size: 2vmax;
+ 
+ }
+
+ .tdcard span{
+  
+  background-color: #fff;
+  margin-top: .5vmax;
+  border: .1vmax solid rgb(115, 109, 109);
+  color:darkred;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vmax;
+ }
+
+
+ .icon{
+margin-left: 30vmax;
+  
+ }
+
+
+
+
+.signin{
+ width: 100%;
+ height: 90%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color:#C4C3C1;
+
+
+}
+.sin-card{
+  width: 30%;
+  height: 60%;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 1vmax;
+  border:.2vmax solid #DC6D64;
+
+}
+.sin-card h1{
+  background-color: #DC6D64;
+  color: #fff;
+ font-size: 2vmax;
+ padding: 1vmax;
+
+}
+.sin-card form input{
+  width: 80%;
+  height: 10%;
+  font-size: 1.2vmax;
+  margin-top: 1vmax;
+
+}
+.sin-card form button{
+  background-color:#DC6D64;
+  color: #fff;
+  padding: 1vmax 2vmax;
+  font-size: 1.1vmax;
+  border: none;
+  text-transform: capitalize;
+
+}
+.sin-card form p a{
+  background-color:#DC6D64;
+  color: #fff;
+  padding: .1vmax .2vmax;
+  font-size: 1.1vmax;
+  border: none;
+  text-transform: capitalize;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.signup{
+ width: 100%;
+ height: 90%;
+ background:#C4C3C1;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
+.sup-card{
+  width: 30%;
+  height: 60%;
+  border:.2vmax solid #DC6D64;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 1vmax;
+  
+
+}
+.sup-card h1{
+  background-color: #DC6D64;
+  color: white;
+  padding: 1vmax;
+ 
+
+}
+.sup-card form input{
+  width: 80%;
+  height: 10%;
+  font-size: 1.2vmax;
+  
+ 
+
+}
+.sup-card form button{
+  background-color: #DC6D64;
+  border: none;
+  color: #fff;
+  padding: 1vmax 2vmax;
+  font-size: 1.1vmax;
+}
+
+.sup-card form p a {
+  background-color: #DC6D64;
+  border: none;
+  color: #fff;
+  padding: .2vmax .2vmax;
+  font-size: 1vmax;
+  text-decoration: none;
+
+}
+
+.update{
+ width: 100%;
+ height: 90%;
+ background:#C4C3C1;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
+.up-card{
+  width: 30%;
+  height: 60%;
+  border:.2vmax solid #DC6D64;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 1.5vmax;
+  
+
+}
+.up-card h1{
+  background-color: #DC6D64;
+  color: white;
+  padding: 1vmax;
+  margin-top: -3vmax;
+ 
+
+}
+.up-card form input{
+  width: 80%;
+  height: 10%;
+  font-size: 1.2vmax;
+
+ 
+
+}
+.up-card form button{
+  background-color: #DC6D64;
+  border: none;
+  color: #fff;
+  padding: 1vmax 2vmax;
+  font-size: 1.1vmax;
+}
+
+.up-card form p {
+  
+  font-size: 1.1vmax;
+}
+.up-card form p a { 
+  background-color: #DC6D64;
+  border: none;
+  color: #fff;
+  padding: .1vmax .2vmax;
+  font-size: 1vmax;
+  text-decoration: none;
+}
+
+
+
+.forget{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#C4C3C1;
+ 
+ 
+ }
+
+ .for-card{
+  width: 30%;
+  height: 60%;
+  border:.2vmax solid #DC6D64;
+  text-transform: capitalize;
+  text-align: center;
+ 
+  
+
+}
+.for-card h1{
+  background-color: #DC6D64;
+  color: white;
+  padding: 1vmax;
+ 
+
+}
+.for-card form input{
+  width: 80%;
+  height: 10%;
+  font-size: 1.2vmax;
+  margin-top: 2.5vmax;
+ 
+
+}
+.for-card form button{
+  background-color: #DC6D64;
+  border: none;
+  color: #fff;
+  padding: .8vmax 1.5vmax;
+  font-size: 1.1vmax;
+}
+
+
+
+
+
+
+.change{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#C4C3C1;
+ 
+ 
+ }
+
+ .change-card{
+  width: 30%;
+  height: 60%;
+  border:.2vmax solid #DC6D64;
+  text-transform: capitalize;
+  text-align: center;
+ 
+  
+
+}
+.change-card h1{
+  background-color: #DC6D64;
+  color: white;
+  padding: 1vmax;
+ 
+
+}
+.change-card form input{
+  width: 80%;
+  height: 10%;
+  font-size: 1.2vmax;
+  margin-top: 2.5vmax;
+ 
+
+}
+.change-card form button{
+  background-color: #DC6D64;
+  border: none;
+  color: #fff;
+  padding: .8vmax 1.5vmax;
+  font-size: 1.1vmax;
+}

@@ -1,0 +1,39 @@
+
+
+  <div class="main-body" >
+    <%- include("partials/header.ejs")%>
+    <%- include("partials/nav.ejs")%>
+    
+
+
+
+    
+    <div class="signup">
+
+
+
+      <div class="sup-card">
+
+       
+        <h1><%= title %></h1>
+        
+
+   <form action="/signup" method="post">
+    <input type="text" placeholder="Enter name " name="username"> <br> <br> 
+    <input type="text" placeholder="Enter mail " name="email"><br> <br> 
+    <input type="text" placeholder="***********" name="password" ><br> <br> 
+    <button>signup</button> <br> <br>
+    <p>   Already have an account? <a class="btn " href="/Signin">Signin</a></p>
+
+   </form>
+
+
+      </div>
+
+
+
+
+
+    
+        <%- include("partials/footer.ejs")%>
+  </div>
